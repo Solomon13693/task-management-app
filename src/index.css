@@ -1,0 +1,43 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: 'Euclid Circular A', sans-serif !important;
+}
+
+@layer base {
+    body {
+        @apply m-0 p-0 box-border overflow-x-hidden;
+    }
+
+    .btn {
+        @apply disabled:opacity-75 disabled:pointer-events-auto inline-block py-3 px-8 bg-transparent cursor-pointer text-center rounded-lg transition ease-in-out text-sm;
+    }
+
+    .btn-primary {
+        @apply bg-blue text-white hover:ring-offset-2 hover:ring-2;
+    }
+
+    .form-control {
+        @apply py-3 px-4 focus:outline-none focus:ring-0 block outline-none border border-gray-200 w-full rounded-lg text-xs font-normal text-opacity-80 text-slate-900 focus:bg-white focus:shadow-md placeholder:text-xs placeholder:font-light;
+    }
+
+    .form-label {
+        @apply mb-2 text-xs font-medium text-[#1E2B3B];
+    }
+
+    .form-control.is-invalid,
+    .was-validated .form-control:invalid {
+        @apply border-red-600;
+    }
+}
+
+
+.go3958317564{
+    font-size: 13px !important;
+    font-weight: light;
+}
