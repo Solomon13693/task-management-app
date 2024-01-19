@@ -13,7 +13,9 @@ Make sure you have Node.js and npm installed on your system.
 ## Installation
 
 Clone the repository:
-git clone https://github.com/your-username/task-management-app.git
+
+```bash
+git clone https://github.com/Solomon13693/task-management-app.git
 
 Navigate to the project directory:
 
@@ -21,10 +23,14 @@ cd task-management-app
 
 Install dependencies:
 
+```bash
 npm install
+
 Running the App
 
 Start the development server:
 
+```bash
 npm run dev
+
 Open your browser and go to http://localhost:5173 to view the app.
