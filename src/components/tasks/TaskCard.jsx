@@ -48,7 +48,7 @@ const TaskCard = ({ task }) => {
                     <div className="flex items-center gap-x-4">
 
                         {task.completed ? (
-                            <span className="inline-flex items-center justify-center gap-1.5 py-0.5 px-4 rounded-md text-[11px] font-medium text-center bg-[#EAF7EE] text-[#05CD99]">Delivered</span>
+                            <span className="inline-flex items-center justify-center gap-1.5 py-0.5 px-4 rounded-md text-[11px] font-medium text-center bg-[#EAF7EE] text-[#05CD99]">Completed</span>
                         ) : (
                             <button title='Mark as completed' onClick={() => handleCompleted(task.id)} className="py-1.5 px-1.5 flex items-center justify-center text-xs rounded-md text-green-800 bg-[#EAF7EE] "> <CheckIcon className="h-3 w-3 " /> </button>
                         )}

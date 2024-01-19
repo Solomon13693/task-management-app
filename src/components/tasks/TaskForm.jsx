@@ -31,7 +31,6 @@ const TaskForm = () => {
                     };
 
                     addTask(newTask)
-                    toast.success('Task added successfully!');
 
                 }}
             >
