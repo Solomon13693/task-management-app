@@ -25,33 +25,42 @@ const TaskForm = () => {
                     const newTask = {
                         id: Math.random().toString(36).substr(2, 9), // Generate a unique ID
                         name: values.name,
-                        dueDate: values.dueDate, 
+                        dueDate: values.dueDate,
                         description: values.description,
                         completed: false,
                     };
 
                     addTask(newTask)
 
+                    // Reset the form
+                    actions.resetForm({
+                        values: {
+                            name: '',
+                            description: '',
+                            dueDate: ''
+                        }
+                    });
+
                 }}
             >
 
-            {(props) => (
+                {(props) => (
 
-                <Form autoComplete='off'>
+                    <Form autoComplete='off'>
 
-                    <CustomInput label="Task Name" name="name" type="text" placeholder="Enter task name" />
+                        <CustomInput label="Task Name" name="name" type="text" placeholder="Enter task name" />
 
-                    <TextArea label="Task Description" name="description" placeholder="Enter task description" />
+                        <TextArea label="Task Description" name="description" placeholder="Enter task description" />
 
-                    <CustomInput label="Choose Due Date" name="dueDate" type="date" placeholder="Enter due date" />
+                        <CustomInput label="Choose Due Date" name="dueDate" type="date" placeholder="Enter due date" />
 
-                    <button type='submit' className="btn btn-primary w-full mb-4"> Submit </button>
+                        <button type='submit' className="btn btn-primary w-full mb-4"> Submit </button>
 
-                </Form>
+                    </Form>
 
-            )}
+                )}
 
-        </Formik>
+            </Formik>
 
         </div >
     )
