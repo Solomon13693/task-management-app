@@ -14,7 +14,7 @@ const TaskCard = ({ task }) => {
 
     const handleDelete = (taskId) => {
         deleteTask(taskId);
-        toast.success('Task marked as deleted !');
+        toast.success('Task deleted successfully !');
     }
 
     return (
